@@ -1,0 +1,50 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: Check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Helper: Check for valid task status values
+    function isValidStatus(status) {
+      return status in ['Planned', 'In Progress', 'Complete'];
+    }
+
+    match /tasks/{taskId} {
+      // 1. READ: User can query and read ONLY tasks where ownerUid matches their authenticated UID
+      allow read: if isAuthenticated() && resource.data.ownerUid == request.auth.uid;
+
+      // 2. CREATE: User can create a task ONLY if:
+      //    - They are authenticated
+      //    - ownerUid matches their own authenticated UID
+      //    - title is a non-empty string (up to 200 chars)
+      //    - initial status is 'Planned'
+      //    - description (if provided) is a string (up to 1000 chars)
+      allow create: if isAuthenticated()
+                    && request.resource.data.ownerUid == request.auth.uid
+                    && request.resource.data.title is string
+                    && request.resource.data.title.size() > 0
+                    && request.resource.data.title.size() <= 200
+                    && request.resource.data.status == 'Planned'
+                    && (!('description' in request.resource.data) || request.resource.data.description is string);
+
+      // 3. UPDATE: User can update ONLY their own tasks:
+      //    - Cannot change ownerUid
+      //    - Cannot change createdAt
+      //    - Status must be one of 'Planned', 'In Progress', 'Complete'
+      //    - Only status and updatedAt fields may be modified
+      allow update: if isAuthenticated()
+                    && resource.data.ownerUid == request.auth.uid
+                    && request.resource.data.ownerUid == resource.data.ownerUid
+                    && request.resource.data.createdAt == resource.data.createdAt
+                    && isValidStatus(request.resource.data.status)
+                    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'updatedAt']);
+
+      // 4. DELETE: Disallowed in Phase 3
+      allow delete: if false;
+    }
+  }
+}
