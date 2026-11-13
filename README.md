@@ -40,7 +40,7 @@ Comprehensive documentation has been prepared to meet the assessment requirement
 
 - **Google Authentication:** Secure, zero-friction sign-in via Google OAuth popup (`signInWithPopup`).
 - **Session Persistence:** Automatic browser session restoration on refresh; unauthenticated visitors are prevented from accessing the dashboard.
-- **Task Management Lifecycle:** Create tasks with mandatory titles and optional descriptions; transition tasks through `Planned`, `In Progress`, and `Complete`.
+- **Task Lifecycle Management:** Create tasks with mandatory titles and optional descriptions; transition tasks through `Planned`, `In Progress`, and `Complete`. (Task deletion and title editing are deliberately disabled by security rules to preserve assessment audit trails).
 - **Strict Multi-User Isolation:** Each task document is indexed by `ownerUid`. Cloud Firestore Security Rules enforce that users can only ever query, read, or modify their own tasks.
 - **Live Filtering & Metrics:** Instant filter pills (`All`, `Planned`, `In Progress`, `Complete`) with dynamic counters and manual refresh.
 - **Responsive Design:** Clean, modern interface styled with Tailwind CSS v4, optimized for mobile phones, tablets, and desktop displays.

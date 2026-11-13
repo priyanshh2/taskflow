@@ -2,366 +2,258 @@
 
 **Application Name:** TaskFlow  
 **Live Web Application:** [https://taskflow-b51e6.web.app](https://taskflow-b51e6.web.app)  
-**Target Audience:** First-time users and evaluators  
-**Document Version:** 1.0.0  
-**Last Updated:** November 2026  
+**Target Audience:** First-time users  
+**Document Version:** 2.0.0 (Elevated Quality Release)  
 
 ---
 
-## Table of Contents
+## Quick Navigation
 
-1. [Introduction](#1-introduction)
-2. [Application URL](#2-application-url)
-3. [System Requirements](#3-system-requirements)
-4. [Accessing TaskFlow](#4-accessing-taskflow)
-5. [Google Sign-In Instructions](#5-google-sign-in-instructions)
-6. [Understanding the Dashboard](#6-understanding-the-dashboard)
-7. [Creating a Task](#7-creating-a-task)
-8. [Viewing Tasks](#8-viewing-tasks)
-9. [Updating Task Status](#9-updating-task-status)
-10. [Understanding Task Statuses](#10-understanding-task-statuses)
-11. [Signing Out](#11-signing-out)
-12. [Common Problems and Troubleshooting](#12-common-problems-and-troubleshooting)
-13. [Frequently Asked Questions (FAQ)](#13-frequently-asked-questions-faq)
+- [1. About TaskFlow](#1-about-taskflow)
+- [2. System Requirements](#2-system-requirements)
+- [3. Accessing the Application](#3-accessing-the-application)
+- [4. Signing In with Google](#4-signing-in-with-google)
+- [5. Understanding the Dashboard](#5-understanding-the-dashboard)
+- [6. Creating a New Task](#6-creating-a-new-task)
+- [7. Viewing & Filtering Tasks](#7-viewing--filtering-tasks)
+- [8. Updating Task Status](#8-updating-task-status)
+- [9. Signing Out](#9-signing-out)
+- [10. Troubleshooting Guide](#10-troubleshooting-guide)
+- [11. Frequently Asked Questions (FAQ)](#11-frequently-asked-questions-faq)
 
 ---
 
-## 1. Introduction
+## 1. About TaskFlow
 
-Welcome to **TaskFlow**! 
+TaskFlow is a simple personal task management web application. It helps you keep track of your daily tasks, organize your work, and monitor what is planned, in progress, or completed.
 
-TaskFlow is a clean, simple, and reliable personal task management web application. It helps you organize your daily work, prioritize assignments, and track the progress of your activities from start to finish.
-
-With TaskFlow, you don't need to remember another username or password. You can sign in instantly and securely using your existing Google account. Every task you create is saved securely in the cloud and tied exclusively to your personal account, ensuring that your tasks remain private and accessible only to you.
-
-### Key Highlights
-- **Simple, Fast Sign-In:** Sign in with one click using your Google account.
-- **Personal Privacy:** Only you can view, create, and update your tasks.
-- **Clear Progress Tracking:** Group tasks into `Planned`, `In Progress`, and `Complete`.
-- **Cloud Persistence:** Your tasks are saved automatically to the cloud; refreshing your page or switching devices won't lose your work.
-- **Mobile Friendly:** Works seamlessly on smartphones, tablets, laptops, and desktop computers.
+### Key Benefits
+- **No Passwords to Remember:** Sign in securely using your existing Google account.
+- **Strict Privacy:** Your tasks are tied to your personal Google ID; no other user can see them.
+- **Automatic Cloud Saving:** All tasks and status changes save immediately to the cloud.
+- **Works Everywhere:** Accessible on desktop, tablet, and mobile browsers.
 
 ---
 
-## 2. Application URL
+## 2. System Requirements
 
-TaskFlow is hosted on Google's high-speed global network and can be accessed anywhere from your web browser:
-
-> **Live Application Link:** **[https://taskflow-b51e6.web.app](https://taskflow-b51e6.web.app)**  
-> *(Backup Domain: [https://taskflow-b51e6.firebaseapp.com](https://taskflow-b51e6.firebaseapp.com))*
-
-If you are running the project locally on your machine for development, it is accessible at:
-`http://localhost:5173`
+- **Supported Web Browsers:** Google Chrome, Microsoft Edge, Mozilla Firefox, or Apple Safari (latest versions).
+- **Internet Connection:** Required to save and retrieve tasks from Google Cloud.
+- **Account:** Any active Google email address (`@gmail.com` or custom Google Workspace account).
+- **Pop-up Setting:** Ensure your browser allows pop-ups for `taskflow-b51e6.web.app` so the Google sign-in window can open.
 
 ---
 
-## 3. System Requirements
+## 3. Accessing the Application
 
-TaskFlow runs directly in any modern web browser. No software installation, browser extensions, or administrative permissions are required.
+### 🎯 What You Want to Do
+Open the TaskFlow web application on your device.
 
-### Supported Web Browsers
-- **Google Chrome:** Version 100 or higher (Recommended)
-- **Mozilla Firefox:** Version 100 or higher
-- **Microsoft Edge:** Version 100 or higher
-- **Apple Safari:** Version 15 or higher (macOS / iOS)
-
-### Device & Network Requirements
-- **Internet Connection:** An active broadband or cellular internet connection is required to communicate with Google authentication and cloud storage services.
-- **Google Account:** Any active personal, educational, or Google Workspace email address (`@gmail.com` or custom domain).
-- **Pop-ups Enabled:** Your browser must allow pop-up windows for `taskflow-b51e6.web.app` so the Google Sign-In prompt can appear.
-
----
-
-## 4. Accessing TaskFlow
-
-Follow these steps to access TaskFlow:
-
-1. Open your preferred web browser (e.g. Google Chrome).
-2. Click or paste the application URL into your browser's address bar:
-   ```text
-   https://taskflow-b51e6.web.app
-   ```
+### 📋 Step-by-Step Instructions
+1. Open your web browser.
+2. In the address bar, type or paste:  
+   **`https://taskflow-b51e6.web.app`**
 3. Press **Enter**.
-4. You will be greeted with the TaskFlow Sign-In page.
+
+### 📷 Application Screen
+![TaskFlow Sign-In Page](docs/screenshots/01-landing-login-page.png)  
+*Figure 1: TaskFlow landing screen showing branding and the Google sign-in button.*  
+**Screenshot file:** `docs/screenshots/01-landing-login-page.png`
+
+### ✅ Expected Result
+The **Sign in to TaskFlow** card loads with a white "Continue with Google" button.
 
 ---
 
-> ### 📷 Screenshot 1: TaskFlow Landing and Sign-In Screen
-> ![TaskFlow Sign-In Screen](docs/screenshots/01-landing-login-page.png)  
-> *Caption: The TaskFlow sign-in screen showing application branding and the "Continue with Google" button.*  
-> **Image File:** `docs/screenshots/01-landing-login-page.png`
+## 4. Signing In with Google
+
+### 🎯 What You Want to Do
+Sign into your personal TaskFlow workspace without entering a password.
+
+### 📋 Step-by-Step Instructions
+1. Click the **"Continue with Google"** button.
+2. A Google account chooser pop-up window will appear.
+3. Click on your Google account. (If you are not already logged in to Google, enter your Google email and password).
+4. Review the basic profile permission (Name, Email, Profile picture) and confirm.
+
+### 📷 Application Screen
+![Google Sign-In Pop-up Dialog](docs/screenshots/02-google-sign-in-popup.png)  
+*Figure 2: Official Google OAuth popup dialog prompting account selection.*  
+**Screenshot file:** `docs/screenshots/02-google-sign-in-popup.png`
+
+### ✅ Expected Result
+The pop-up window closes automatically, and the application redirects you to your personal TaskFlow Dashboard.
 
 ---
 
-## 5. Google Sign-In Instructions
+## 5. Understanding the Dashboard
 
-Signing into TaskFlow is straightforward and secure:
+### 🎯 What You Want to Do
+Familiarize yourself with the layout of your workspace.
 
-### Step-by-Step Sign-In
-1. On the TaskFlow home screen, locate the white card titled **"Sign in to TaskFlow"**.
-2. Click the **"Continue with Google"** button (identified by the official Google logo).
-3. A secure Google Sign-In pop-up window will appear on your screen.
-4. Select the Google account you wish to use, or enter your Google email and password if you are not currently signed into Google.
-5. If prompted, confirm the requested basic profile permissions (Name, Email address, and Profile picture).
-6. Once Google validates your sign-in, the pop-up will close automatically, and TaskFlow will immediately load your personalized dashboard.
-
----
-
-> ### 📷 Screenshot 2: Google Sign-In Pop-up Window
-> ![Google Sign-In Pop-up](docs/screenshots/02-google-sign-in-popup.png)  
-> *Caption: The official Google OAuth account selector pop-up window.*  
-> **Image File:** `docs/screenshots/02-google-sign-in-popup.png`
-
----
-
-## 6. Understanding the Dashboard
-
-Once signed in, the TaskFlow Dashboard becomes your central workspace:
-
-### Dashboard Components
+### 📋 Overview of Layout
 
 ```
-+---------------------------------------------------------------------------------+
-|  [TF] TaskFlow               [Active User: John Doe (john@gmail.com)] [Sign out]|
-+---------------------------------------------------------------------------------+
-|  [Avatar] Welcome, John Doe!                          (Session: Active Google)  |
-+------------------------------------+--------------------------------------------+
-|  CREATE NEW TASK                   |  YOUR TASKS (Total: 3)           [Refresh] |
-|                                    |  [All (3)] [Planned] [In Progress] [Done]  |
-|  Task Title *                      |                                            |
-|  [                               ] |  +---------------------------------------+ |
-|                                    |  | Deploy production update   [Planned]  | |
-|  Description (optional)            |  | Status: [Planned v]                   | |
-|  [                               ] |  +---------------------------------------+ |
-|                                    |  | Setup database backup  [In Progress]  | |
-|  [ Create Task ]                   |  | Status: [In Progress v]               | |
-+------------------------------------+--------------------------------------------+
++-----------------------------------------------------------------------------------+
+| [TF] TaskFlow                                  [Avatar] John Doe     [Sign out]   |
++-----------------------------------------------------------------------------------+
+| [Avatar] Welcome, John Doe! (john@gmail.com)          [Active Google Session]     |
++-------------------------------------+---------------------------------------------+
+| CREATE NEW TASK                     | YOUR TASKS (Total: 2)             [Refresh] |
+|                                     | [All (2)] [Planned (1)] [In Progress (1)]   |
+| Task Title *                        |                                             |
+| [ e.g. Review client report       ] | +-----------------------------------------+ |
+|                                     | | Review client report          [Planned] | |
+| Description (optional)              | | Status: [Planned v]                     | |
+| [ Context or notes...             ] | +-----------------------------------------+ |
+|                                     |                                             |
+| [ Create Task ]                     |                                             |
++-------------------------------------+---------------------------------------------+
 ```
 
-1. **Top Navigation Bar:**
-   - Displays the **TaskFlow (TF)** logo and application title on the left.
-   - Displays your **Google profile picture**, **full name**, and **email address** on the right.
-   - Includes the **"Sign out"** button.
-2. **Welcome Header Card:**
-   - Confirms that you are currently in an **Active Google Session**.
-   - Displays your profile avatar and full name.
-3. **Left Column — "Create New Task" Panel:**
-   - Contains the input form where you compose and submit new tasks.
-4. **Right Column — "Your Tasks" Panel:**
-   - Displays all tasks you have created, ordered newest first.
-   - Contains the task filter buttons and the manual **"Refresh"** button.
+1. **Top Bar:** Shows the TaskFlow logo, your profile name, your Google profile photo, and the "Sign out" button.
+2. **Welcome Card:** Confirms your active Google identity and email.
+3. **Left Panel ("Create New Task"):** The form where you add new items.
+4. **Right Panel ("Your Tasks"):** The list of your personal tasks with category filters and counter badges.
+
+### 📷 Application Screen
+![TaskFlow Dashboard Overview](docs/screenshots/03-dashboard-overview.png)  
+*Figure 3: Full TaskFlow Dashboard view showing user profile, creation form, and task list.*  
+**Screenshot file:** `docs/screenshots/03-dashboard-overview.png`
+
+### ✅ Expected Result
+You see your name and email displayed at the top, an empty task list (if first time), and an active task creation form.
 
 ---
 
-> ### 📷 Screenshot 3: TaskFlow Dashboard Overview
-> ![TaskFlow Dashboard Overview](docs/screenshots/03-dashboard-overview.png)  
-> *Caption: The TaskFlow Dashboard showing the welcome banner, task creation form on the left, and task list on the right.*  
-> **Image File:** `docs/screenshots/03-dashboard-overview.png`
+## 6. Creating a New Task
+
+### 🎯 What You Want to Do
+Add a new task to your personal list.
+
+### 📋 Step-by-Step Instructions
+1. In the **"Create New Task"** form on the left, click in the **Task Title** input field.
+2. Type a clear title for your task (e.g., *"Prepare weekly project status update"*).  
+   *Note: Title is required and cannot be empty or spaces only.*
+3. *(Optional)* Click in the **Description** field and enter extra details or instructions.
+4. Click the purple **"Create Task"** button.
+
+### 📷 Application Screen
+![Filling in the Task Form](docs/screenshots/04-task-creation-form.png)  
+*Figure 4: Entering title and description into the Create New Task form.*  
+**Screenshot file:** `docs/screenshots/04-task-creation-form.png`
+
+![Task Created Success Banner](docs/screenshots/05-task-created-success.png)  
+*Figure 5: Green confirmation banner confirming task creation in Cloud Firestore.*  
+**Screenshot file:** `docs/screenshots/05-task-created-success.png`
+
+### ✅ Expected Result
+- A green banner announces: *"Task successfully created and saved to Cloud Firestore."*
+- The input fields reset.
+- The new task appears at the top of your task list with the initial status set to **Planned**.
 
 ---
 
-## 7. Creating a Task
+## 7. Viewing & Filtering Tasks
 
-Adding a new task takes only a few seconds:
+### 🎯 What You Want to Do
+Review your tasks and filter them based on their current progress.
 
-### Step-by-Step Instructions
-1. Navigate to the **"Create New Task"** form on the left side of the dashboard.
-2. Click inside the **Task Title** input field.
-3. Type a concise, descriptive name for your task (e.g., *"Prepare quarterly customer feedback summary"*).
-   - *Note: Task Title is required and cannot be empty.*
-4. *(Optional)* Click inside the **Description** field and provide any relevant context, notes, or instructions.
-5. Click the purple **"Create Task"** button.
-   - The button will display *"Creating Task..."* with a spinning loader for a brief moment.
-6. Once saved, a green confirmation banner will appear:
-   > *"Task successfully created and saved to Cloud Firestore."*
-7. Your new task will automatically appear at the top of your task list with the initial status set to **Planned**.
+### 📋 Step-by-Step Instructions
+1. Review the **"Your Tasks"** panel on the right. Tasks are listed with the newest items on top.
+2. Click any of the filter pills at the top of the list to narrow your view:
+   - **All:** Displays every task you have created.
+   - **Planned:** Displays tasks that are scheduled but not started.
+   - **In Progress:** Displays tasks you are actively working on.
+   - **Complete:** Displays finished tasks.
+3. To pull the latest updates if you have another window open, click the **"Refresh"** button.
 
----
+### 📷 Application Screen
+![Task List with Filters](docs/screenshots/06-task-list-and-filters.png)  
+*Figure 6: Task list displaying tasks, creation timestamps, and active status filter tabs.*  
+**Screenshot file:** `docs/screenshots/06-task-list-and-filters.png`
 
-> ### 📷 Screenshot 4: Filling in the Task Creation Form
-> ![Task Creation Form](docs/screenshots/04-task-creation-form.png)  
-> *Caption: Entering a title and description into the Task Creation form.*  
-> **Image File:** `docs/screenshots/04-task-creation-form.png`
-
----
-
-> ### 📷 Screenshot 5: Task Created Confirmation Alert
-> ![Task Created Success Banner](docs/screenshots/05-task-created-success.png)  
-> *Caption: Green notification banner confirming successful task creation and automatic list refresh.*  
-> **Image File:** `docs/screenshots/05-task-created-success.png`
+### ✅ Expected Result
+The task list immediately adjusts to show only the tasks that match the selected filter.
 
 ---
 
-## 8. Viewing Tasks
+## 8. Updating Task Status
 
-All tasks you create are displayed in the **"Your Tasks"** panel on the right.
+### 🎯 What You Want to Do
+Move a task forward as you work on it (e.g. from Planned to In Progress, or to Complete).
 
-### Key Display Features
-- **Chronological Order:** Your newest tasks always appear at the top of the list.
-- **Timestamp:** Each task card displays the exact creation date and time (e.g., *"Created: Nov 13, 2026, 10:45 AM"*).
-- **Task Count:** A numeric counter in the header shows the total number of tasks you currently have.
-- **Empty State Notice:** If you have not created any tasks yet, a friendly empty state illustration guides you to create your first task.
+### 📋 Step-by-Step Instructions
+1. Find the task card you want to update.
+2. On the right side of the card, click the **Status** dropdown menu.
+3. Choose the new status:
+   - **Planned** (Sky Blue badge)
+   - **In Progress** (Amber/Yellow badge)
+   - **Complete** (Green badge)
 
-### Filtering Tasks
-Above the task cards, click any of the filter pills to instantly narrow down your view:
-- **All:** Displays all of your tasks regardless of status.
-- **Planned:** Shows only tasks that are scheduled but not yet started.
-- **In Progress:** Shows tasks actively being worked on.
-- **Complete:** Shows finished tasks.
+### 📷 Application Screen
+![Status Dropdown Selection](docs/screenshots/07-status-change-dropdown.png)  
+*Figure 7: Selecting a new lifecycle status from the task dropdown.*  
+**Screenshot file:** `docs/screenshots/07-status-change-dropdown.png`
 
-Each filter button includes a dynamic counter indicating how many tasks fall into that status.
+### ✅ Expected Result
+- The status badge changes color and label immediately.
+- A brief notification banner confirms: *"Task status updated to [New Status]."*
+- The change is saved permanently to the cloud.
 
-### Manual Refresh
-If you have TaskFlow open in another tab or window, click the **"Refresh"** button at the top-right of the task panel to pull the latest state from the cloud immediately.
-
----
-
-> ### 📷 Screenshot 6: Task List with Status Filter Pills
-> ![Task List and Filter Tabs](docs/screenshots/06-task-list-and-filters.png)  
-> *Caption: Task list showing multiple tasks and active category filter buttons.*  
-> **Image File:** `docs/screenshots/06-task-list-and-filters.png`
+> [!NOTE]  
+> **Editing and Deletion:** TaskFlow currently supports updating the status of tasks. Editing task titles or deleting tasks is intentionally not supported to preserve task history.
 
 ---
 
-## 9. Updating Task Status
+## 9. Signing Out
 
-As your work progresses, you can easily change the status of any task:
+### 🎯 What You Want to Do
+Safely end your session when you are finished using TaskFlow.
 
-### Step-by-Step Instructions
-1. Locate the task card you wish to update in your task list.
-2. On the right side of the task card, locate the **Status** dropdown menu.
-3. Click the dropdown to reveal the three available choices:
-   - **Planned**
-   - **In Progress**
-   - **Complete**
-4. Select the new status.
-5. The dropdown will show a tiny spinner for a fraction of a second while the change is saved to the cloud.
-6. The task badge instantly updates its label and color to reflect your new status, and a confirmation banner will notify you:
-   > *"Task status updated to [Status]."*
+### 📋 Step-by-Step Instructions
+1. Navigate to the top-right corner of the dashboard header.
+2. Click the **"Sign out"** button next to your name and avatar.
 
----
+### 📷 Application Screen
+![Signing Out of TaskFlow](docs/screenshots/08-sign-out.png)  
+*Figure 8: Sign out button in the top navigation bar.*  
+**Screenshot file:** `docs/screenshots/08-sign-out.png`
 
-> ### 📷 Screenshot 7: Updating Task Status via the Dropdown
-> ![Status Change Dropdown](docs/screenshots/07-status-change-dropdown.png)  
-> *Caption: Selecting a new lifecycle status from the task card dropdown.*  
-> **Image File:** `docs/screenshots/07-status-change-dropdown.png`
+### ✅ Expected Result
+Your session is terminated, and the browser returns to the TaskFlow sign-in screen.
 
 ---
 
-## 10. Understanding Task Statuses
+## 10. Troubleshooting Guide
 
-TaskFlow uses three distinct statuses to help you organize your daily workflow:
+The table below outlines common issues and verified solutions:
 
-| Status Badge | Badge Color | Meaning & When to Use |
+| Issue | Likely Cause | Verified Solution |
 | :--- | :--- | :--- |
-| **Planned** | **Sky Blue** | The default initial state for all new tasks. Use this for tasks that have been identified or scheduled, but work has not yet commenced. |
-| **In Progress** | **Warm Amber / Yellow** | Indicates that work on this task is currently underway. Moving tasks to this status helps you track what you are actively doing today. |
-| **Complete** | **Emerald Green** | The task has been successfully accomplished. Completed tasks remain in your history so you can review completed work. |
+| **"Pop-up blocked" message appears** | Browser blocked the Google sign-in window. | Look at the right side of your browser address bar. Click the pop-up icon, select **"Always allow pop-ups from https://taskflow-b51e6.web.app"**, click **Done**, and click **"Continue with Google"** again. |
+| **"Sign-in cancelled" alert appears** | Google login pop-up was closed before completing login. | Click the **&times;** button to dismiss the alert, click **"Continue with Google"**, and keep the pop-up open until your account is chosen. |
+| **"Create Task" button is disabled** | The Task Title field is empty or contains only spaces. | Type at least one letter or word into the **Task Title** field. The button will activate immediately. |
+| **"Permission denied" alert appears** | Browser session expired or Firestore rules not published. | Click **"Sign out"** and sign back in. If you are an administrator, verify rules are published in Firebase Console under **Firestore &gt; Rules**. |
+| **Changes made in another tab do not show** | The application does not poll continuously to conserve data. | Click the **"Refresh"** button at the top of the "Your Tasks" card to pull the latest state from the cloud. |
+| **Blank white screen on load** | Network connectivity issue or stale browser cache. | Perform a hard refresh: Press `Ctrl + F5` (Windows) or `Cmd + Shift + R` (Mac). Ensure internet connection is active. |
 
 ---
 
-## 11. Signing Out
+## 11. Frequently Asked Questions (FAQ)
 
-When you have finished using TaskFlow—especially on a shared or public computer—you should always sign out:
+### Q: Can anyone else see my tasks?
+**No.** Every task is stamped with your unique Google User ID. Cloud Firestore security rules strictly prevent any other user from viewing, querying, or updating your tasks.
 
-### Step-by-Step Instructions
-1. Look at the top-right corner of the screen next to your user name and profile photo.
-2. Click the **"Sign out"** button.
-3. The button will momentarily read *"Signing out..."*.
-4. Your active session will be securely terminated, and you will be returned to the TaskFlow Sign-In page.
+### Q: Can I delete a task?
+**No.** Task deletion is disabled by security rules. When you finish a task, select **Complete** in the status dropdown.
 
----
+### Q: Can I edit the title or description of a task after creating it?
+**No.** Titles and descriptions are permanent once submitted. You can change the status at any time.
 
-> ### 📷 Screenshot 8: Signing Out of TaskFlow
-> ![Sign Out Button](docs/screenshots/08-sign-out.png)  
-> *Caption: The Sign Out button in the dashboard top navigation bar.*  
-> **Image File:** `docs/screenshots/08-sign-out.png`
+### Q: Will my tasks be saved if I close my browser or restart my computer?
+**Yes.** All tasks are stored securely in Google Cloud. When you log in again from any computer or mobile phone, your tasks will be there.
 
 ---
 
-## 12. Common Problems and Troubleshooting
-
-If you encounter an issue while using TaskFlow, consult the solutions below. Solutions labeled **[Verified Solution]** have been confirmed directly against the application's implementation.
-
----
-
-### Problem 1: Google Sign-In Window Does Not Open or Shows "Pop-up blocked"
-- **Symptom:** You click "Continue with Google", but nothing appears, or a red error alert appears saying: *"Pop-up blocked: Please allow pop-ups for this site in your browser settings."*
-- **Cause:** Your web browser's built-in pop-up blocker prevented the Google login window from opening.
-- **[Verified Solution]:**
-  1. Look at the right side of your browser's address bar for a small icon showing a red "X" over a window or a pop-up blocked notification.
-  2. Click the pop-up icon.
-  3. Select **"Always allow pop-ups and redirects from https://taskflow-b51e6.web.app"**.
-  4. Click **Done**.
-  5. Click **"Continue with Google"** again.
-
----
-
-### Problem 2: "Sign-in cancelled" Error Message
-- **Symptom:** A red error banner appears saying: *"Sign-in cancelled: The Google sign-in window was closed before completing authentication."*
-- **Cause:** The Google pop-up window was closed before choosing an account or before Google finished validating your credentials.
-- **[Verified Solution]:**
-  1. Click the small **&times;** button on the red banner to dismiss the error.
-  2. Click **"Continue with Google"** again.
-  3. Keep the pop-up window open until the account selection process is complete.
-
----
-
-### Problem 3: "Task title is required and cannot be empty"
-- **Symptom:** You try to click "Create Task", but the button is disabled or a red alert appears.
-- **Cause:** TaskFlow requires every task to have at least one non-whitespace character in the title.
-- **[Verified Solution]:**
-  1. Enter at least one meaningful letter, number, or word into the **Task Title** field.
-  2. Note that entering only spaces will not be accepted.
-  3. Once a valid title is typed, the "Create Task" button will become active.
-
----
-
-### Problem 4: "Permission denied: Unable to read tasks"
-- **Symptom:** A red banner in the task list reads: *"Permission denied: Unable to read tasks. Ensure your Firestore security rules are deployed."*
-- **Cause:** Your browser is not authenticated or the Cloud Firestore security rules in the Firebase Console have not been published.
-- **[Verified Solution]:**
-  1. Click **"Sign out"** and sign back in to refresh your Google authentication token.
-  2. If the problem persists, ensure your administrator has published the project's security rules in Firebase Console under **Firestore Database &gt; Rules**.
-
----
-
-### Problem 5: Tasks or Updates Not Showing in Another Tab
-- **Symptom:** You changed a task or added a task in one browser window, but another window or device does not show it immediately.
-- **Cause:** TaskFlow fetches your tasks upon initial load and upon creating new tasks. It does not continuously poll in the background to save battery and network data.
-- **[Verified Solution]:**
-  1. In the secondary window, click the **"Refresh"** button at the top of the "Your Tasks" card.
-  2. The latest tasks will be retrieved from the cloud immediately.
-
----
-
-### Problem 6: Blank Screen or App Fails to Load
-- **Symptom:** The browser shows a blank white page when navigating to `https://taskflow-b51e6.web.app`.
-- **General Troubleshooting Suggestions:**
-  1. Check your internet connection.
-  2. Perform a hard refresh: Press `Ctrl + F5` (Windows) or `Cmd + Shift + R` (Mac).
-  3. Clear your browser's cached files for `taskflow-b51e6.web.app`.
-  4. Ensure JavaScript is enabled in your browser settings.
-
----
-
-## 13. Frequently Asked Questions (FAQ)
-
-### Q1: Can other people see or edit the tasks I create?
-**No.** TaskFlow enforces strict user data isolation. Even though other users can use the application, each task is stamped with your unique Google User ID (`ownerUid`). Server-side security rules at Google Cloud ensure that you can only ever read and modify your own tasks.
-
-### Q2: Can I delete a task?
-**No, not in the current release.** To maintain an accurate audit history for the assessment evaluation, task deletion is intentionally disabled. If you have finished a task, simply change its status to **Complete**.
-
-### Q3: Can I edit the title or description of a task after creating it?
-Currently, task titles and descriptions are permanent once created. However, you can change the **Status** at any time. If you need to revise a task, create a new task with the updated information.
-
-### Q4: Will my tasks stay saved if I close my browser or restart my computer?
-**Yes.** All tasks are stored immediately in Google Cloud Firestore. When you return to TaskFlow and sign in from any computer or browser, all of your tasks will be right where you left them.
-
-### Q5: Does TaskFlow work on my mobile phone?
-**Yes.** The interface is built with responsive design. The dashboard automatically rearranges into a single column on mobile screens, making it easy to create and manage tasks on smartphones.
-
----
-
-*TaskFlow User Manual &bull; Designed for Ease of Use & Reliability &bull; [taskflow-b51e6.web.app](https://taskflow-b51e6.web.app)*
+*TaskFlow User Manual &bull; Simple, Secure Task Management &bull; [taskflow-b51e6.web.app](https://taskflow-b51e6.web.app)*
